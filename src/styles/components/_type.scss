@@ -4,13 +4,13 @@ body {
   line-height: 1.4;
   color: $blanc;
   background-color: $bleu-bg;
+  margin: 0;
 }
 .section__container{
   display: grid;
-  margin: 0 20px;
-  //grid-template-columns: repeat(16, 1fr);
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
+  padding: 0 20px;
 }
 .intro{
   height: 100vh;
@@ -47,16 +47,17 @@ body {
 
 }
 .nav{
+  position: absolute;
+  right: 10px;
   &-list{
     display: flex;
-    justify-content: flex-end;
     list-style-type: none;
     &__el{
       margin: 0 5px;
       .btn-lang{
       padding: 5px;
       background-color: $bleu-clair;
-      border-radius: 25%;
+      border-radius: 10px;
       width: 40px;
       height: 40px;
       text-align: center;
@@ -88,7 +89,7 @@ body {
   &--intro{
     text-align: center;
     font-size: 25px;
-    margin: 125px 0 0 0;
+    margin: 180px 0 0 0;
     .light-blue{
     color: $bleu-clair;
     }
@@ -97,7 +98,6 @@ body {
 .comp {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   &__title{
     margin-left: 10px;
@@ -119,9 +119,12 @@ body {
       background-color: $bleu-clair;
       margin: 20px 0;
       padding: 20px;
-      border-radius: 5%;
+      border-radius: 10px;
       width: 90%;
       max-width: 600px;
+      &:last-child{
+        margin-bottom: 80px;
+      }
 
       .comp__content{
         display: flex;
@@ -140,5 +143,40 @@ body {
         text-align: center;
       }
     }
+  }
+}
+.section__container--lbg{
+  background-color: $bleu-bg-2;
+  padding: 50px 20px;
+}
+.projets__container{
+  grid-column: 1 / -1;
+  background-color: $bleu-bg;
+  border-radius: 25px;
+  padding: 10px;
+  .projets__img{
+    width: 100% ;
+    height: auto;
+    border-radius: 25px;
+    margin: 10px 0;
+    border: solid $blanc 2px;
+  }
+}
+.title__projets{
+  margin: 10px 0;
+  line-height: 1;
+}
+.projets__liens{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: $bleu-clair;
+  width: 100px;
+  padding: 5px;
+  margin: auto;
+
+  &:hover,&:focus{
+    color: $blanc;
+    text-decoration: underline;
   }
 }

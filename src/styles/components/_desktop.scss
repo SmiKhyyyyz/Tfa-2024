@@ -1,0 +1,110 @@
+@media (min-width: 1000px) {
+    body {
+        font-size: 24px;
+    }
+
+    .intro {
+        .image-container {
+            width: 400px;
+        }
+
+        .section__container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            grid-gap: 20px;
+            padding: 0 20px;
+        }
+
+        .title--sec {
+            grid-column: 3 / -1;
+            margin: 100px 0 0 0;
+        }
+
+        .text {
+            grid-column: 4 / -5;
+
+            &--intro {
+                grid-column: 1 / -1;
+                font-size: 35px;
+                margin-top: 180px;
+            }
+        }
+
+        .comp {
+            .slider-container {
+                grid-column: 2 / -2;
+                overflow: hidden;
+                width: 100%;
+                position: relative;
+
+                .container {
+                    display: flex;
+                    flex-direction: row;
+
+                    .comp__el {
+                        user-select: none;
+                        height: 300px;
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1800px) {
+    .comp {
+        .slider-container {
+            grid-column: 2 / -2;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                width: 400%;
+                transition: transform 0.3s ease;
+
+                .comp__el {
+                    user-select: none;
+                    height: 300px;
+                    width: 300px;
+                    flex-shrink: 0;
+                    margin: 0 25px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1801px) {
+    .comp {
+        .container {
+            display: flex;
+            flex-direction: row;
+
+            .comp__el {
+                display: flex;
+                margin: 20px;
+                padding: 40px;
+                border-radius: 10px;
+                width: 90%;
+                max-width: 600px;
+                font-size: 24px;
+
+                &:last-child {
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+
+    .intro {
+        .image-container {
+            width: 500px;
+        }
+    }
+}

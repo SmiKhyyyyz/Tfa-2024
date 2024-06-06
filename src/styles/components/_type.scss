@@ -16,13 +16,35 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  .img{
-    margin: 0 auto;
+
+  .image-container {
+    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    position: absolute;
-  }
+    width: 300px;
+    margin: 0 auto;
+
+    img {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 90%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(to top, rgba(11, 37, 69, 1), rgba(11, 37, 69, 0));
+        z-index: 1;
+    }
+}
+
+
 }
 .nav{
   &-list{
@@ -47,6 +69,7 @@ body {
   grid-column: 1 / -1;
   font-size: 50px;
   font-family: "Teko", sans-serif;
+
   &--princ{
     font-size: 70px;
     .line{
@@ -54,6 +77,10 @@ body {
       text-align: center;
       line-height: 1.1;
     }
+  }
+  &--sec{
+    margin: 0;
+    
   }
 }
 .text{

@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <canvas id="canvas" class="canvas"></canvas>
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-list__el"><button class="btn-lang">Fr</button></li>
@@ -30,9 +31,11 @@
     <section id="intro" class="intro section__container">
       <p class="text text--intro">Bonjour, je suis <span class="light-blue">Sylvain</span> étudiant</p>
       <h1 class="title title--princ">
-        <span class="line">Webdesigner</span>
-        <span class="line">&</span>
-        <span class="line">Developer</span>
+          <span class="line">Webdesigner</span>
+        <div class="line-container">
+          <span class="line line--out">&</span>
+          <span class="line">Developer</span>
+        </div>
       </h1>
       <div class="image-container">
         <img src="assets/images/PortraitSite.png" alt="Une photo de moi prise de demi-face" width="300" class="img">
@@ -40,12 +43,10 @@
     </section>
     <section id="pres" class="pres section__container section__container--lbg">
       <h2 class="title title--sec">Qui suis-je ?</h2>
-      <p class="text">Je suis Sylvain Devaux, un étudiant de la Haute école Albert Jacquard en Desgin Web Transmedia.
-      </p>
-      <p class="text">J’ai actuellement 23 ans Je suis un créateur web passionné, spécialisé dans la conception et le
-        développement de sites internet. Ce que je préfère est le frontend. J'utilise principalement HTML, CSS (SCSS) et
-        JavaScript pour réaliser mes projets, tout en me formant à l'utilisation de WordPress et de frameworks pour
-        élargir mes compétences. J'aime travailler de manière collaborative, explorer de nouvelles idées.</p>
+      <p class="text text--pres">Je m'appelle Sylvain Devaux, je suis un étudiant de la Haute école Albert Jacquard en Desgin Web Transmedia.</p>
+      <p class="text text--pres">À 23 ans, je suis un créateur web passionné, spécialisé dans la conception et le développement de sites internet. Mon domaine de prédilection est le frontend. J'ai de bonnes base dans l'utilisation d’HTML, CSS (notamment SCSS) et JavaScript pour donner vie à mes projets. J’aimerais approfondir mes connaissances en  WordPress et explorer divers frameworks afin d'élargir mes compétences et de rester à la pointe des dernières technologies.</p>
+      <p class="text text--pres">J'apprécie particulièrement le travail collaboratif, où je peux échanger des idées et m'inspirer des autres pour créer des expériences web innovantes et engageantes. Toujours avide d'apprendre et de repousser les limites de mes compétences, je suis constamment à l'affût de nouvelles opportunités d'enrichir mon bagage technique et créatif.</p>
+        
     </section>
     <section id="comp" class="comp section__container">
       <h2 class="title title--sec">Mes compétences</h2>
@@ -150,9 +151,10 @@
           <h2 class="title title__projets">Rethinking-UX</h2>
           <div class="projets__text">
           <p class="text">Le projet Rux avait pour but de donner une nouvelle vie à la cour de l'HEAJ. Pour faire ce projet, nous avions du nous mettre a la place des utilisateurs de la cour de l’école.</p>
+          <p class="text">Malheureusement, ce projet n'aura jamais vu le jour...</p>
           </div>
           <img class="projets__img" src="assets/images/Rux.png" alt="Une screenshot de mon site dataplay">
-          <a class="projets__liens" href="https://sylvain-devaux.be/projets/dataplay/dataplay_presentation/"
+          <a class="projets__liens" href="https://sylvain-devaux.be/projets/rethinking-ux/"
             target="_blank">Visiter le site</a>
         </div>
         <div class="projets__container projets__container--items">

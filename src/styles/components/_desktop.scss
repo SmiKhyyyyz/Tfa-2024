@@ -1,24 +1,54 @@
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
     body {
-        font-size: 24px;
+        font-size: 22px;
     }
 
+    .section__container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-gap: 20px;
+        padding: 0 20px;
+    }
     .intro {
         .image-container {
             width: 400px;
         }
+        .title--princ{
+            font-size: 125px;
+            margin: 0 0 200px 0;
+            .line{
+                display: flex;
+                justify-content: center;
+                line-height: 1;
+                width: auto;
 
-        .section__container {
-            height: 100vh;
-            display: grid;
-            grid-template-columns: repeat(16, 1fr);
-            grid-gap: 20px;
-            padding: 0 20px;
+                &--out{
+                    color: $bleu-bg;
+                    text-shadow: -1px -1px 0 $blanc,  
+                    1px -1px 0 $blanc,
+                    -1px  1px 0 $blanc,
+                    1px  1px 0 $blanc;
+                    display: inline;
+                    justify-content: center;
+                    margin: 0 30px 0 0;
+                }
+
+                &:last-child{
+                    display: inline;
+                    flex-wrap: wrap;
+                }
+            }
+            .line-container {
+                display: flex;
+                justify-content: center;
+            }
         }
-
+    }
         .title--sec {
             grid-column: 3 / -1;
-            margin: 100px 0 0 0;
+            font-size: 75px;
+            margin: 50px 0 0 0;
         }
 
         .text {
@@ -26,8 +56,11 @@
 
             &--intro {
                 grid-column: 1 / -1;
-                font-size: 35px;
-                margin-top: 180px;
+                font-size: 25px;
+                margin: 150px 0 0 0;
+            }
+            &--pres{
+                margin: 0;
             }
         }
 
@@ -50,10 +83,11 @@
                 }
             }
         }
-    }
+
+
 }
 
-@media (min-width: 1000px) and (max-width: 1800px) {
+@media (min-width: 1200px) and (max-width: 1800px) {
     .comp {
         .slider-container {
             grid-column: 2 / -2;
@@ -90,7 +124,6 @@
                 display: flex;
                 margin: 20px;
                 padding: 40px;
-                border-radius: 10px;
                 width: 90%;
                 max-width: 600px;
                 font-size: 24px;

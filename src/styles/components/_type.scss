@@ -5,12 +5,13 @@ body {
   color: $blanc;
   background-color: $bleu-bg;
   margin: 0;
+  overflow-x: hidden;
 }
 .section__container{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
-  padding: 0 20px;
+  padding: 50px 20px;
 }
 .intro{
   height: 100vh;
@@ -88,7 +89,7 @@ body {
   grid-column: 1 / -1;
   &--intro{
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 180px;
     .light-blue{
     color: $bleu-clair;
@@ -123,7 +124,7 @@ body {
       width: 90%;
       max-width: 600px;
       &:last-child{
-        margin-bottom: 80px;
+        margin-bottom: 0px;
       }
 
       .comp__content{
@@ -145,15 +146,19 @@ body {
     }
   }
 }
+.projets__slider{
+  display: grid;
+  grid-column: 1 / -1;
+}
 .section__container--lbg{
   background-color: $bleu-bg-2;
   padding: 50px 20px;
 }
 .projets__container{
-  grid-column: 1 / -1;
   background-color: $bleu-bg;
   border-radius: 25px;
   padding: 10px;
+  margin: 0 0 50px 0 ;
   .projets__img{
     width: 100% ;
     height: auto;

@@ -1,4 +1,12 @@
-@media (min-width: 1000px) {
+@media (max-width: 1399px){
+    #next{
+        display: none;
+    }
+    #prev{
+        display: none;
+    }
+}
+@media (min-width: 1400px) {
     .projets__slider{
         grid-column: 2 / -2;
         position: relative;
@@ -16,7 +24,7 @@
                 width: 90%;
                 height: auto;
                 text-align: justify;
-                border-radius: 10px;
+                border-radius: 25px;
                 padding: 20px;
                 transition: 0.5s;
                 left: 0;
@@ -28,6 +36,8 @@
             }
             .title__projets{
                 grid-column: 2 / -1;
+                font-size: 80px;
+                margin-top: auto;
             }
             .projets__img{
                 grid-column: 8 / -2;

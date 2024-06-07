@@ -33,7 +33,11 @@
             }
             .projets__img{
                 grid-column: 8 / -2;
-            }   
+                transition: transform 0.3s ease;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            } 
             .projets__text{
                 grid-column: 2 / 8;
                 font-size: 20px;

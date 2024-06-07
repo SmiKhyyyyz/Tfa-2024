@@ -19,6 +19,25 @@ body {
   flex-direction: column;
   padding: 0;
 
+  .lien__exp{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    padding: 5px;
+    background-color: $bleu-clair;
+    color: $bleu-bg;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    border: #0B2545 solid 2px;
+    &:hover{
+      background-color: $blanc;
+    color: $bleu-bg;
+    }
+}
+
   .image-container {
     position: absolute;
     bottom: 0;

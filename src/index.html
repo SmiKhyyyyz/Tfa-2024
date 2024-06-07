@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <title>DWMA project</title>
@@ -23,13 +23,21 @@
   <canvas id="canvas" class="canvas"></canvas>
   <nav class="nav">
     <ul class="nav-list">
-      <li class="nav-list__el"><button class="btn-lang">Fr</button></li>
-      <li class="nav-list__el"><button class="btn-lang">En</button></li>
+      <li class="nav-list__el"><button class="btn-lang" id="btn-lang-fr">Fr</button></li>
+      <li class="nav-list__el"><button class="btn-lang" id="btn-lang-en">En</button></li>
     </ul>
   </nav>
+  <div class="res">
+    <ul class="res__list">
+      <li class="res__list__el"><a target="_blank" href="https://www.linkedin.com/in/sylvain-devaux-9194b4312/">Linkedin <svg class="res__logo res__logo--link" width="256" height="256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 256"><path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" fill="#0B2545"/></svg></a></li>
+      <li class="res__list__el"><a href="mailto:sylvain.dvx@icloud.com">Mail <svg class="res__logo res__logo--mail" xmlns="http://www.w3.org/2000/svg"  width="35"  height="35"  viewBox="0 0 24 24"  fill="#0B2545" ><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-4 9h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m2 -4h-8a1 1 0 1 0 0 2h8a1 1 0 0 0 0 -2" /></svg></a></li>
+
+    </ul>
+  </div>
   <main>
     <section id="intro" class="intro section__container">
-      <p class="text text--intro">Bonjour, je suis <span class="light-blue">Sylvain</span> étudiant</p>
+      <p class="text text--intro lang lang--fr">Bonjour, je suis <span class="light-blue">Sylvain</span> étudiant</p>
+      <p class="text text--intro lang lang--en">Hello, I am <span class="light-blue">Sylvain</span> a student</p>
       <h1 class="title title--princ">
           <span class="line">Webdesigner</span>
         <div class="line-container">
@@ -42,17 +50,19 @@
       </div>
     </section>
     <section id="pres" class="pres section__container section__container--lbg">
-      <h2 class="title title--sec">Qui suis-je ?</h2>
-      <p class="text text--pres">Je m'appelle Sylvain Devaux, je suis un étudiant de la Haute école Albert Jacquard en Desgin Web Transmedia.</p>
-      <p class="text text--pres">À 23 ans, je suis un créateur web passionné, spécialisé dans la conception et le développement de sites internet. Mon domaine de prédilection est le frontend. J'ai de bonnes base dans l'utilisation d’HTML, CSS (notamment SCSS) et JavaScript pour donner vie à mes projets. J’aimerais approfondir mes connaissances en  WordPress et explorer divers frameworks afin d'élargir mes compétences et de rester à la pointe des dernières technologies.</p>
-      <p class="text text--pres">J'apprécie particulièrement le travail collaboratif, où je peux échanger des idées et m'inspirer des autres pour créer des expériences web innovantes et engageantes. Toujours avide d'apprendre et de repousser les limites de mes compétences, je suis constamment à l'affût de nouvelles opportunités d'enrichir mon bagage technique et créatif.</p>
+      <h2 class="title title--sec lang lang--fr">Qui suis-je ?</h2>
+      <h2 class="title title--sec lang lang--en">Who am I ?</h2>
+      <p class="text text--pres lang lang--fr">Je m'appelle Sylvain Devaux, je suis un étudiant de la Haute école Albert Jacquard en Desgin Web Transmedia.</p>
+      <p class="text text--pres lang lang--fr">À 23 ans, je suis un créateur web passionné, spécialisé dans la conception et le développement de sites internet. Mon domaine de prédilection est le frontend. J'ai de bonnes base dans l'utilisation d’HTML, CSS (notamment SCSS) et JavaScript pour donner vie à mes projets. J’aimerais approfondir mes connaissances en  WordPress et explorer divers frameworks afin d'élargir mes compétences et de rester à la pointe des dernières technologies.</p>
+      <p class="text text--pres lang lang--fr">J'apprécie particulièrement le travail collaboratif, où je peux échanger des idées et m'inspirer des autres pour créer des expériences web innovantes et engageantes. Toujours avide d'apprendre et de repousser les limites de mes compétences, je suis constamment à l'affût de nouvelles opportunités d'enrichir mon bagage technique et créatif.</p>
+      <p class="text text--pres lang lang--en">My name is Sylvain Devaux, and I'm a student at the Haute école Albert Jacquard studying Desgin Web Transmedia.</p>
+      <p class="text text--pres lang lang--en">At 23, I'm a passionate web designer, specializing in website design and development. My area of expertise is the frontend. I have a good grounding in the use of HTML, CSS (especially SCSS) and JavaScript to bring my projects to life. I'd like to deepen my knowledge of WordPress and explore various frameworks to broaden my skills and keep up with the latest technologies.</p>
+      <p class="text text--pres lang lang--en">I particularly enjoy collaborative work, where I can exchange ideas and draw inspiration from others to create innovative and engaging web experiences. Always eager to learn and push the boundaries of my skills, I'm constantly on the lookout for new opportunities to enrich my technical and creative background.</p>
         
     </section>
     <section id="comp" class="comp section__container">
-      <h2 class="title title--sec">Mes compétences</h2>
-      <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id minus ipsa repellat architecto
-        excepturi temporibus adipisci dolorem ratione ut et assumenda molestias, animi eveniet accusantium quae
-        voluptatum deserunt maxime dignissimos.</p>
+      <h2 class="title title--sec lang lang--fr">Mes compétences</h2>
+      <h2 class="title title--sec lang lang--en">My skills</h2>
       <div class="slider-container">
         <div class="container">
           <div class="comp__el comp__el--adobe">
@@ -73,8 +83,8 @@
               </svg>
               <h3 class="title comp__title">Suite adobe</h3>
             </div>
-            <p class="text comp__text">J’utilise régulièrement la plupart des logiciels de la suite adobe pour créer et
-              /ou modifier les visuels que j’utilise pour mes création.</p>
+            <p class="text comp__text lang lang--fr">J’utilise régulièrement la plupart des logiciels de la suite adobe pour créer et /ou modifier les visuels que j’utilise pour mes création.</p>
+            <p class="text comp__text lang lang--en">I regularly use most of the adobe suite to create and/or modify the visuals I use for my creations.</p>
           </div>
           <div class="comp__el comp__el--figma">
             <div class="comp__content">
@@ -105,8 +115,8 @@
               </svg>
               <h3 class="title comp__title">Figma</h3>
             </div>
-            <p class="text comp__text">Pour toutes mes créations, j'utilise Figma comme outil principal de conception.
-              L'intégralité du design est fait sur cette plateforme. </p>
+            <p class="text comp__text lang lang--fr">Pour toutes mes créations, j'utilise Figma comme outil principal de conception. L'intégralité du design est fait sur cette plateforme.</p>
+            <p class="text comp__text lang lang--en">For all my creations, I use Figma as my main design tool. The entire design is done on this platform.</p>
           </div>
           <div class="comp__el comp__el--web">
             <div class="comp__content">
@@ -117,7 +127,8 @@
               </svg>
               <h3 class="title comp__title">Html/Scss/Js</h3>
             </div>
-            <p class="text comp__text">Pour l’instant, toutes mes créations web sont faites à partir de ces trois langages. En attendant d’apprendre WordPress et un framework.</p>
+            <p class="text comp__text lang lang--fr">Pour l’instant, toutes mes créations web sont faites à partir de ces trois langages. En attendant d’apprendre WordPress et un framework.</p>
+            <p class="text comp__text lang lang--en">For the time being, all my web creations are based on these three languages. Until I learn WordPress and a framework.</p>
           </div>
           <div class="comp__el comp__el--chatgpt">
             <div class="comp__content">
@@ -128,7 +139,8 @@
               </svg>
               <h3 class="title comp__title">ChatGPT</h3>
             </div>
-            <p class="text comp__text">ChatGPT m’aide souvent pour modifier une partie de mon code ou alors tout simplement pour corriger mes textes.</p>
+            <p class="text comp__text lang lang--fr ">ChatGPT m’aide souvent pour modifier une partie de mon code ou alors tout simplement pour corriger mes textes.</p>
+            <p class="text comp__text lang lang--en">ChatGPT often helps me to modify part of my code or simply to correct my texts.</p>
           </div>
         </div>
       </div>
@@ -139,34 +151,42 @@
         <div class="projets__container projets__container--items">
           <h2 class="title title__projets">DataPlay</h2>
           <div class="projets__text">
-            <p class="text">Ceci était mon premier projet de groupe qui avait pour but de jouer avec des données.</p>
-            <p class="text">On devait donc créer une base de données en json sur un thème au choix. Notre thème était un quiz les pays européens.</p>
-            <p class="text">C’est un des projets qui m’a le plus amusez !</p>
+            <p class="text lang lang--fr">Ceci était mon premier projet de groupe qui avait pour but de jouer avec des données.</p>
+            <p class="text lang lang--fr">On devait donc créer une base de données en json sur un thème au choix. Notre thème était un quiz les pays européens.</p>
+            <p class="text lang lang--fr">C’est un des projets qui m’a le plus amusez !</p>
+            <p class="text lang lang--en">This was my first group project, with the aim of playing with data.</p>
+            <p class="text lang lang--en">So we had to create a json database on a theme of our choice. Our theme was a quiz on European countries.</p>
+            <p class="text lang lang--en">It's one of the projects I've enjoyed most!</p>
           </div>
           <img class="projets__img" src="assets/images/Dataplay.png" alt="Une screenshot de mon site dataplay">
           <a class="projets__liens" href="https://sylvain-devaux.be/projets/dataplay/dataplay_presentation/"
-            target="_blank">Visiter le site</a>
+            target="_blank"><span class="lang lang--fr">Visiter le site</span><span class="lang lang--en">Visit website</span></a>
         </div>
         <div class="projets__container projets__container--items">
           <h2 class="title title__projets">Rethinking-UX</h2>
           <div class="projets__text">
-          <p class="text">Le projet Rux avait pour but de donner une nouvelle vie à la cour de l'HEAJ. Pour faire ce projet, nous avions du nous mettre a la place des utilisateurs de la cour de l’école.</p>
-          <p class="text">Malheureusement, ce projet n'aura jamais vu le jour...</p>
+          <p class="text lang lang--fr">Le projet Rux avait pour but de donner une nouvelle vie à la cour de l'HEAJ. Pour faire ce projet, nous avions du nous mettre a la place des utilisateurs de la cour de l’école.</p>
+          <p class="text lang lang--fr">Malheureusement, ce projet n'aura jamais vu le jour...</p>
+          <p class="text  lang lang--en">The aim of the Rux project was to breathe new life into the HEAJ school grounds. To do this, we had to put ourselves in the shoes of the schoolyard's users.</p>
+          <p class="text  lang lang--en">Unfortunately, the project never came to fruition...</p>
           </div>
           <img class="projets__img" src="assets/images/Rux.png" alt="Une screenshot de mon site dataplay">
           <a class="projets__liens" href="https://sylvain-devaux.be/projets/rethinking-ux/"
-            target="_blank">Visiter le site</a>
+            target="_blank"><span class="lang lang--fr">Visiter le site</span><span class="lang lang--en">Visit website</span></a>
         </div>
         <div class="projets__container projets__container--items">
           <h2 class="title title__projets">Hello Wolrd</h2>
           <div class="projets__text">
-            <p class="text">Ceci était mon premier projet de groupe qui avait pour but de jouer avec des données. On devait
-              donc créer une base de données en json sur un thème au choix. Notre thème était un quiz les pays
-              européens. C’est un des projets qui m’a le plus amusez !</p>
+            <p class="text lang lang lang--fr">Ce projet a été mon tout premier véritable site web, entièrement codé par mes soins du début à la fin.</p>
+            <p class="text lang lang lang--fr">J'ai pris un plaisir immense à travailler sur cette création, ce qui m'a permis non seulement de m'épanouir dans le processus, mais aussi d'acquérir de solides bases en développement web.</p>
+            <p class="text lang lang lang--fr">Cette expérience m'a offert une compréhension approfondie des langages de programmation, des outils de conception, et des meilleures pratiques de développement.</p>
+            <p class="text lang lang--en">This project was my very first real website, coded entirely by myself from start to finish.</p>
+            <p class="text lang lang--en">I thoroughly enjoyed working on this project, which enabled me not only to grow in the process, but also to acquire a solid grounding in web development.</p>
+            <p class="text lang lang--en">This experience has given me an in-depth understanding of programming languages, design tools and development best practices.</p>
           </div>
           <img class="projets__img" src="assets/images/HelloWorld.png" alt="Une screenshot de mon site dataplay">
           <a class="projets__liens" href="https://sylvain-devaux.be/projets/helloworld/"
-            target="_blank">Visiter le site</a>
+            target="_blank"><span class="lang lang--fr">Visiter le site</span><span class="lang lang--en">Visit website</span></a>
         </div>
           <button id="next">></button>
           <button id="prev"><</button>

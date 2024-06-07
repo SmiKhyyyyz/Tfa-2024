@@ -87,7 +87,7 @@
 
 }
 
-@media (min-width: 1200px) and (max-width: 1800px) {
+@media (min-width: 1401px) and (max-width: 1800px) {
     .comp {
         .slider-container {
             grid-column: 2 / -2;
@@ -140,4 +140,24 @@
             width: 500px;
         }
     }
+}
+@media (min-width: 600px) and (max-width:1400px){
+    .text{
+        grid-column: 2 / -1;
+        font-size: 20px;
+    }
+    .comp {
+        .container{
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            .comp__el{
+                margin: 20px;
+                max-width: 400px;
+                &:last-child{
+                    margin-bottom: 20px ;
+                }
+            }
+        }
+    } 
 }

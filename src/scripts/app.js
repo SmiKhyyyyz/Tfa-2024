@@ -225,3 +225,32 @@ window.addEventListener('resize', () => {
 resizeCanvas();
 initializeCircles();
 animate();
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Fonction pour changer la langue
+    function setLanguage(lang) {
+        const allLangElements = document.querySelectorAll('.lang');
+        const targetLangElements = document.querySelectorAll(`.lang--${lang}`);
+
+        allLangElements.forEach(el => el.style.display = 'none');
+        targetLangElements.forEach(el => el.style.display = 'block');
+    }
+
+    // Définition des écouteurs d'événements pour les boutons de langue
+    const btnLangFr = document.getElementById('btn-lang-fr');
+    const btnLangEn = document.getElementById('btn-lang-en');
+
+    btnLangFr.addEventListener('click', () => {
+        setLanguage('fr');
+    });
+
+    btnLangEn.addEventListener('click', () => {
+        setLanguage('en');
+    });
+
+    // Initialisation avec la langue par défaut
+    setLanguage('en');
+});
+
